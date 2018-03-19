@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<style type="text/css">
+		*{
+			margin: 10px;
+		}
+	</style>
+
+</head>
+<body>
+<div>
+<form method="post" action="something.php" name="myForm" onsubmit="return validateForm()">
+	<div>
+		<label>First Name</label>
+		<input id="firstName" style="border-radius: 5px;" type="text">
+	</div><br>
+	<div>
+		<label name="lastName" id="lastName">Last Name</label>
+		<input  style="border-radius: 5px;" type="text"></div>
+       
+       <br>
+	<label><input class="btn" style="background: orange;" type="submit" value="submit"></label>
+</form>
+</div>
+
+
+
+<script>
+function validateForm() {
+	var firstName = document.forms["myForm"]["firstName"].value;
+ 
+if(firstName==null || firstName==""){
+
+	alert("First name is required");
+    return false;
+}
+
+
+
+ }
+
+
+</script>
+
+
+
+</body>
+</html>
