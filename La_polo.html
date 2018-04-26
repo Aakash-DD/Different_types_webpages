@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+</style>
+</head>
+<body>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="row">
+  <div class="overlay-content" style="float: left;width: 250px;">
+    <a href="#">PLAYER</a>
+    <a href="#">CLUB</a>
+    <a href="#">TOURNAMENT</a>
+    <a href="#">VIEW ALL</a>
+    </div>
+        <span style="float: left;">
+        <img src="http://13.126.217.179/media/None/Nacho-Figueras.jpg" class="img-responsive" style="height: 150px; float: left; margin: 40px;">
+        <img src="http://13.126.217.179/media/None/Nacho-Figueras.jpg" class="img-responsive" style="height: 150px; float: left; margin: 40px;"">
+        <img src="http://13.126.217.179/media/None/Nacho-Figueras.jpg" class="img-responsive" style="height: 150px; float: left; margin: 40px;">
+        <img src="http://13.126.217.179/media/None/Nacho-Figueras.jpg" class="img-responsive" style="height: 150px; float: left; margin: 40px;">
+    </span>
+</div></div>
+
+  
+</div>
+<div id="myNav1" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+  <div class="row">
+  <div class="overlay-content" style="float: left;width: 250px;">
+    <a href="#">GEAR</a>
+    <a href="#">PLEASURE</a>
+    <a href="#">FASION</a>
+    <a href="#">BRAND</a>
+    <a href="#">VIEW ALL</a>
+</div>
+    <span style="float: left;">
+        <img src="http://13.126.217.179/media/151/Fort-Lauderdale.jpg" class="img-responsive" style="height: 150px; float: left; margin: 40px;">
+        <img src="http://13.126.217.179/media/151/Fort-Lauderdale.jpg" class="img-responsive" style="height: 150px; float: left; margin: 40px;"">
+        <img src="http://13.126.217.179/media/151/Fort-Lauderdale.jpg" class="img-responsive" style="height: 150px; float: left; margin: 40px;">
+    </span>
+</div>
+  </div>
+
+
+<h2 style="font-size: 150px;margin-top: 5px;font-family: Lobster, Monospace;text-align: center;">LA POLO</h2>
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    
+    <ul class="nav navbar-nav">
+      <li><a href="#">Subscribe</a></li>
+      <li class="active"><a href="#">HOME</a></li>
+      <li><a href="#">
+        <span style="cursor:pointer" onmouseover="openNav()">POLO</span>
+      </a></li>
+      <li><a href="#">INDIAN POLO</a></li>
+      <li><a href="#">
+        <span style="cursor:pointer" onmouseover="openNav1()">LIFESTYLE</span>
+      </a></li>
+      <li><a href="#">EVENTS</a></li>
+      <li><a href="#">MAGAZINE</a></li>
+      <li><a href="#">M-NEWSELTTER</a></li>
+      <li><a href="#">CONTACT</a></li>
+    </ul>
+  
+</nav>
+  
+<div class="container">
+</div>
+
+
+
+
+<script>
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+<script>
+function openNav1() {
+    document.getElementById("myNav1").style.width = "100%";
+}
+
+function closeNav1() {
+    document.getElementById("myNav1").style.width = "0%";
+}
+</script>
+     
+</body>
+</html>
